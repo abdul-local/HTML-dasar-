@@ -2,28 +2,122 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <Link href="style.css" rel="stylesheet" type="text/css"  />
+    <title>Document</title>
     <style>
-        h3{
-            font-size: 40px
+    table,tr,td{
+        border: 1px solid red;
+        
+        }
+        table{
+            border-collapse: collapse
+        }
+        th{
+            width: 100px
+        
+        }
+        td{
+            height: 50px
+        }
+        td,th{
+            padding: 15px
+        }
+        tr:hover{
+            background-color: yellow;
+        }
+        tr:nth-child(even){
             background-color: aqua;
-            border: 22px solid blue;
         }
     </style>
-    <javascript></javascript>
-    <title>HTML pertama saya </title>
 </head>
 <body>
-   <h1>Belajar HTML Kursus pertama di code codepolitan</h1>
-   <h2 style="border: 2px solid blue">menampilkan garis kotak broo</h2>
-   <h3>ini saya gunakan css broo</h3>
-   <h4>ini contoh css yang saya panggil di lura html </h4>
-   <h5>ini saya menggunakan hover untuk css nya broo</h5>
-   <h style="margin-top: 20px">Memberi jarak antara Element dengan margin </h3>
-    <p style="color: orange;">ini adalah halaman pertama saya <i>guys</i></p>
-    <p style="color: red; font-size: 18px">ini tulisan akan berwarna merah dan memiliki ukuran 18px</p>
-    <p style="background-color: royalblue">ini untuk mengubah warna bgroundnya</p>
-    <p style="text-align: center">Mengubah perataan tex broo</p>
-    <h2 style="border: 2px; solid blue; padding: 20px">Ini memberikan jarak antara boreder dengan konten </h2>
+   <table border="1">
+      <tr>
+          <th>Nama</th> 
+          <th>Kota</th>
+          <th>Gol darah</th>
+      </tr>
+       <tr>
+           <td>Toni</td> 
+           <td>Bandung</td>
+           <td>AB</td>
+       </tr>
+       <tr>
+           <td>Kresna</td>
+           <td>Jakarta</td>
+           <td>A</td>
+       </tr>
+       <tr>
+           <td>hipzil</td>
+           <td>Lombok</td>
+           <td>C</td>
+       </tr>
+       
+   </table>
+   <br>
+   <br>
+   <table border="1">
+       <tr>
+           <th>No</th>
+           <th colspan="2">Nama</th>
+       </tr>
+       <tr>
+           <td>1</td>
+           <td>hipzil</td>
+           <td>kijing</td>
+       </tr>
+       <tr>
+       <td>2</td>
+       <td>kerisna</td>
+       <td>aji</td>
+    </tr>
+   </table>
+    <br>
+    <br>
+    <table border="1" cellspacing="10" cellpadding="10">
+        <tr>
+            <th>Language</th>
+            <th>Framework</th>
+            
+        </tr>
+        <tr>
+            <td rowspan="2">PHP</td>
+            <td>Laravel</td>
+        </tr>
+        <tr>
+            <td>CodePolitan</td>
+        </tr>
+        <tr>
+            <td rowspan="2">ruby</td>
+            <td>ruby on reak</td>
+        </tr>
+        <tr>
+            <td>sinatra</td>
+        </tr>
+        
+    </table>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>Language</th>
+            <th>Framework</th>
+            
+        </tr>
+        <tr>
+            <td rowspan="2">PHP</td>
+            <td>Laravel</td>
+        </tr>
+        <tr>
+            <td>CodePolitan</td>
+        </tr>
+        <tr>
+            <td rowspan="2">ruby</td>
+            <td>ruby on reak</td>
+        </tr>
+        <tr>
+            <td>sinatra</td>
+        </tr>
+        
+    </table>
 </body>
 </html>
