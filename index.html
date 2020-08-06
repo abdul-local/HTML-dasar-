@@ -3,35 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <style>
+    #header{
+    background: red;
+        height: 10%;
+         font-size: 1.5em;
+         text-align: center;
+         padding-top: 20px
+        
+    
+    }
+    #slider{
+    background: yellow;
+        float: left;
+        height: 400px;
+        width: 30%;
+        font-size: 1.5em;
+        text-align: center;
+        padding-top: 20px;
+    }
+    #contact{
+    background:blue;
+    float: right;
+    width: 70%;
+    height: 400px;
+    padding-top: 20px;
+    font-size: 1.5em;
+        
+    }
+    #footer{
+    background:green;
+    text-align: center;
+    clear: both;
+    font-size:1.5em;
+    
+    }
+    </style>
 </head>
 <body>
-   <table style="width: 100%">
-       <tr>
-           <td colspan="2" style="background-color: red">
-               <h1 style="text-align: center">HEADER</h1>
-           </td>
-       </tr>
-       <tr valign="top">
-           <td width=30; style="background-color: greenyellow">
-               <strong>Sidebar</strong>
-               <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
-               <li>Home</li>
-               <li>About</li>
-               <li>Kontak</li>
-               <li>Forum</li>
-           </td>
-           <td width=100; height=700; style="background-color: purple">
-               konten utama
-               <h1></h1>
-               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-           </td>
-       </tr>
-       <tr>
-           <td colspan="2"; style="background-color: blue">
-               footer
-           </td>
-       </tr>
-   </table>
-    
+<div id="header">HEADER</div>
+<div id="slider">SLIDER</div>
+<div id="contact">CONTENT</div>
+<div id="footer">FOOTER</div>
 </body>
 </html>
