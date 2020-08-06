@@ -2,36 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mengatur Css text</title>
+    <title>css font</title>
     <style>
-    
+        .serif{
+            font-family: arial, serif;
+        }
+        .sanserif{
+            font-family: Helvetica, sans-serif;
+        }
+        .monospace{
+            font-family: couriee New, monospace;
+        }
         h1{
-            color: darkorange;
+            font-size: 40px;
         }
         h2{
-            text-align: justify;
-            text-indent: inherit;
+            font-size: 30px;
+        }
+    
+        h3{
+            font-size: 20px;
         }
         p{
-            text-decoration: underline;
+            font-size: 1.5em;
+
         }
-        h3{
-            text-transform: uppercase;
+        .light{
+            font-weight:lighter;
         }
-        h4{
-            letter-spacing: 4px;
+        .normal{
+            font-weight: normal;
         }
-        h5{
-            letter-spacing: 4px;
+        .thick{
+            font-weight: bold;
+        }
+        .bolder{
+            font-weight: bolder;
+        }
+        .normall{
+            font-variant: normal;
+        }
+        .smallcaps{
+            font-variant: small-caps;
+        }
+        .a{
+            font-style: normal;
+        }
+        .b{
+            font-style: italic;
+        }
+        .c{
+            font-style: oblique;
         }
     </style>
 </head>
 <body>
-    <h1> Text pada CSS </h1>
-    <p>Memberikan decoration pada paragraf</p>
-    <h2>ini tek untuk text-indet untuk memberikan identitas pada pada text</h2>
-    <h3>ini teks transform mengubah huruf menjadi huruf besar atau kecil </h3>
-    <h4>ini letter spacig yang berfungsi untuk mengatur spasi pada </h4>
-    <h5>sama juga denga yang di atas untuk mengatur spasi sesui dengan yang di inginkan </h5>
+   <h1>hading 1</h1>
+   <h2>heading 2</h2>
+   <h3>heading 3 </h3>
+   <p>Ini font-size dengan em broo, you bisa explore lebih luas lagi </p>
+    <h1 class="serif">Serif</h1>
+    <h2 class="sanserif">sans-serif</h2>
+    <h3 class="monospace">Monospace</h3>
+    <h2 class="normal">Normal</h2>
+    <h2 class="light">Light</h4>
+    <h2 class="thick">thick</h5>
+    <h2 class="bolder">Bolder</h6>
+    <h3 class="normall">Normalll</h3>
+    <h3 class="smallcaps">Small-Caps</h3>
+    <h4 class="a">normal</h4>
+    <h4 class="b">italic</h4>
+    <h4 class="c">oblique</h4>
+    
 </body>
 </html>
