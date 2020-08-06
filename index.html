@@ -2,77 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>css font</title>
+    <title>Css Selector</title>
     <style>
-        .serif{
-            font-family: arial, serif;
+        body{
+            background-color: blanchedalmond;
         }
-        .sanserif{
-            font-family: Helvetica, sans-serif;
+        h1,h2,p{
+            font-family: "arial", sans-serif;
+            color: orangered;
         }
-        .monospace{
-            font-family: couriee New, monospace;
+        p span{
+            background-color: aqua;
+            margin: auto;
+            padding: inherit;
+            font-size: 1.2em;
         }
-        h1{
-            font-size: 40px;
+        #abdul{
+            background-color: greenyellow;
+            font-family: Arial, sans-serif;
+            font-size:1.2em;
+            
         }
-        h2{
-            font-size: 30px;
+        .sy{
+            background-color: green;
+            font-family: "Times new Roman", serif;
+            font-size: 1.2em;
         }
-    
-        h3{
-            font-size: 20px;
+        .bg{
+            background-color: cornflowerblue;
+            font-size:1.3em;
         }
-        p{
-            font-size: 1.5em;
-
-        }
-        .light{
-            font-weight:lighter;
-        }
-        .normal{
-            font-weight: normal;
-        }
-        .thick{
-            font-weight: bold;
-        }
-        .bolder{
-            font-weight: bolder;
-        }
-        .normall{
-            font-variant: normal;
-        }
-        .smallcaps{
-            font-variant: small-caps;
-        }
-        .a{
-            font-style: normal;
-        }
-        .b{
-            font-style: italic;
-        }
-        .c{
+        p.small{
+            color: blueviolet;
             font-style: oblique;
+        }
+        input{
+            width: 100%;
+            padding: 2px
+        }
+        input [type=password]{
+            border: 2px solid red;
+        }
+        button{
+            background-color: cornflowerblue;
+            font-size: 20px;
+            padding: 20px 40px;
+            border: 2px solid red;
+        }
+        button:hover{
+            background-color: greenyellow;
+            color:white;
+            
         }
     </style>
 </head>
 <body>
-   <h1>hading 1</h1>
-   <h2>heading 2</h2>
-   <h3>heading 3 </h3>
-   <p>Ini font-size dengan em broo, you bisa explore lebih luas lagi </p>
-    <h1 class="serif">Serif</h1>
-    <h2 class="sanserif">sans-serif</h2>
-    <h3 class="monospace">Monospace</h3>
-    <h2 class="normal">Normal</h2>
-    <h2 class="light">Light</h4>
-    <h2 class="thick">thick</h5>
-    <h2 class="bolder">Bolder</h6>
-    <h3 class="normall">Normalll</h3>
-    <h3 class="smallcaps">Small-Caps</h3>
-    <h4 class="a">normal</h4>
-    <h4 class="b">italic</h4>
-    <h4 class="c">oblique</h4>
-    
+    <h1>Belajar Css Selector</h1>
+    <h2>penggunaan koma pada selector</h2>
+    <p>apa sih <span>loee</span> hehe </p>
+ <p id="abdul">Ini selector yang menggunakan ID broo</p>
+ <p class="sy">Dan yang ini selector yang menggunakan class</p>
+ <p class="small">ini yang mengguakan selector spesifik broo </p>
+ <p class="bg">ini tambahan class baru guyss</p>
+ <form action="#">
+     Nama:<br>
+     <input type="text">
+     Password: <br>
+     <input type="password">
+     
+     <button>ini selector hover</button>
+ </form>
 </body>
 </html>
