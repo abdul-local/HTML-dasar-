@@ -2,75 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Css Selector</title>
+    <title>Membuat Layout Dasar </title>
     <style>
-        body{
-            background-color: blanchedalmond;
-        }
-        h1,h2,p{
-            font-family: "arial", sans-serif;
-            color: orangered;
-        }
-        p span{
+        .header{
             background-color: aqua;
-            margin: auto;
-            padding: inherit;
-            font-size: 1.2em;
+            min-height: 50px;
+            text-align: center;
         }
-        #abdul{
-            background-color: greenyellow;
-            font-family: Arial, sans-serif;
-            font-size:1.2em;
+    
+        .content{
+            background-color: chartreuse;
+            min-height: 50px
+                
+        }
+        .footer{
+            background-color: cornsilk;
+            min-height: 50px;
+        }
+        .container{
+            width: 800px;
+            margin: 0 auto;
+        }
+        .logo{
+            width: 800px
+        }
+        .menu ul{
+            padding: 0px;
             
         }
-        .sy{
-            background-color: green;
-            font-family: "Times new Roman", serif;
-            font-size: 1.2em;
+        .menu ul li{
+            display: inline-block;
         }
-        .bg{
-            background-color: cornflowerblue;
-            font-size:1.3em;
-        }
-        p.small{
-            color: blueviolet;
-            font-style: oblique;
-        }
-        input{
-            width: 100%;
-            padding: 2px
-        }
-        input [type=password]{
-            border: 2px solid red;
-        }
-        button{
-            background-color: cornflowerblue;
-            font-size: 20px;
-            padding: 20px 40px;
-            border: 2px solid red;
-        }
-        button:hover{
-            background-color: greenyellow;
-            color:white;
-            
+        .menu ul li a{
+            padding: 20px 10px;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <h1>Belajar Css Selector</h1>
-    <h2>penggunaan koma pada selector</h2>
-    <p>apa sih <span>loee</span> hehe </p>
- <p id="abdul">Ini selector yang menggunakan ID broo</p>
- <p class="sy">Dan yang ini selector yang menggunakan class</p>
- <p class="small">ini yang mengguakan selector spesifik broo </p>
- <p class="bg">ini tambahan class baru guyss</p>
- <form action="#">
-     Nama:<br>
-     <input type="text">
-     Password: <br>
-     <input type="password">
-     
-     <button>ini selector hover</button>
- </form>
+  <div class="container">
+   <div class="header">
+      <h1>Logo Produk</h1> 
+      <div class="logo">
+          <img src="./image/politan.jpg" alt="">
+      </div>
+      <div class="menu">
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+          
+      </div>
+   </div>
+   <div class="content">
+       <h2>Produk kita</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque atque vel voluptate ducimus, architecto nisi, eos ipsum velit delectus aliquid, debitis nemo modi reiciendis odio ratione quia. Inventore, quos, suscipit!</p>
+   </div>
+   <div class="footer">
+       <p>copyrigh 2020 Halaman saya </p>
+   </div>
+    </div>
+    
 </body>
 </html>
