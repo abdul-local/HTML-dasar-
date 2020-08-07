@@ -3,41 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Membuat Layout Dasar </title>
-    <style>
-        .header{
-            background-color: aqua;
-            min-height: 50px;
-            text-align: center;
-        }
-    
-        .content{
-            background-color: chartreuse;
-            min-height: 50px
-                
-        }
-        .footer{
-            background-color: cornsilk;
-            min-height: 50px;
-        }
-        .container{
-            width: 800px;
-            margin: 0 auto;
-        }
-        .logo{
-            width: 800px
-        }
-        .menu ul{
-            padding: 0px;
-            
-        }
-        .menu ul li{
-            display: inline-block;
-        }
-        .menu ul li a{
-            padding: 20px 10px;
-            text-decoration: none;
-        }
-    </style>
+    <Link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <div class="container">
@@ -56,8 +22,23 @@
       </div>
    </div>
    <div class="content">
-       <h2>Produk kita</h2>
-       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque atque vel voluptate ducimus, architecto nisi, eos ipsum velit delectus aliquid, debitis nemo modi reiciendis odio ratione quia. Inventore, quos, suscipit!</p>
+      <h2>My Articles</h2>
+       <h2>My product</h2>
+       <div class="thumbnail">
+           <img src="http://via.placeholder.com/250x150" alt="">
+           <h2>Product 2</h2>
+           <p>Rp 250.000</p>
+       </div>
+       <div class="thumbnail">
+           <img src="http://via.placeholder.com/250x150" alt="">
+           <h2>Product 2</h2>
+           <p>Rp 250.000</p>
+       </div>
+       <div class="thumbnail">
+           <img src="http://via.placeholder.com/250x150" alt="">
+           <h2>Product 2</h2>
+           <p>Rp 250.000</p>
+       </div>
    </div>
    <div class="footer">
        <p>copyrigh 2020 Halaman saya </p>
